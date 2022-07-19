@@ -1,0 +1,9 @@
+description = "Spring Example"
+
+dependencies {
+    compile(project(":spring-context"))
+    //java: 找不到符号
+    //  符号:   类 InstrumentationSavingAgent
+    //  位置: 程序包 org.springframework.instrument
+    compile(project(":spring-instrument"))
+}
